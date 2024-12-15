@@ -6,5 +6,8 @@
 
 export default {
 	// show frontend-rendered page on /frontend
-	'/frontend': import("common/page.tsx") 
+	'/newFile': import("common/newFile.tsx"),
+	'/users': import("common/user.tsx"),
+	'/button': import("common/reactiveButton.tsx"),
+	'/component': import("common/complexComponent.tsx"),
 }

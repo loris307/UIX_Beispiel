@@ -7,12 +7,9 @@ import { provideRedirect } from "uix/providers/common.tsx";
 import { type Entrypoint } from "uix/providers/entrypoints.ts";
 
 export default {
-    '/': "Hello world!",
-    '/pages/*': {
-        '/69': 69,
-        '/420': <div>Hello <b>world</b></div>,
-        '*': () => {
-            throw new Error("Nope");
-        }
-    }
+	// show backend (hybrid) rendered page on /backend
+	'/backend': import("common/page.tsx"), 
+	
+	// redirect / to /backend
+	'/': provideRedirect("/backend")
 } satisfies Entrypoint;
