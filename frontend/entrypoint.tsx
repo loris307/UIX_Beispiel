@@ -10,4 +10,6 @@ export default {
 	'/users': import("common/user.tsx"),
 	'/button': import("common/reactiveButton.tsx"),
 	'/component': import("common/complexComponent.tsx"),
+	'/classComponent': import("common/classComponent.tsx"),
+	'/componentCommunication': import("common/ComponentCommunication.tsx"),
 }
