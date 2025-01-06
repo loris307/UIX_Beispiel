@@ -1,7 +1,12 @@
 import { sendMessage } from "backend/messages.ts";
-sendMessage('Abonniert sofort Loris Galler auf Youtube!')
+
+const message = sendMessage('Abonniert sofort Loris Galler auf Youtube!')
 
 export default
 	<main>
-		<h1>GUCK IN DIE KONSOLE!</h1>
+		<h1>WIR SENDEN INS BACKEND!</h1>
+
+		<p>
+			{message}
+		</p>
 	</main>;

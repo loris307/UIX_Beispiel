@@ -1,3 +1,5 @@
 export function sendMessage(message: string) {
-    console.log("Message received", message)
-}
+    console.log("Hab was: ", message)
+    
+    return "Das Backend sagt: " + message 
+} 
